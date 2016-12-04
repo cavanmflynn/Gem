@@ -1,0 +1,72 @@
+/* Grid System */
+
+.row {
+	box-sizing: border-box;
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+		content: " ";
+		display: table;
+	}
+}
+
+[class^="gem-c-"] {
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+[class^="gem-c-"]+[class^="gem-c-"] {
+	margin-left: 0;
+	margin-left: 1.6%;
+}
+
+.gem-c-1 { width: 6.86666666667%; }
+
+.gem-c-2 { width: 15.3333333333%; }
+
+.gem-c-3 { width: 23.8%; }
+
+.gem-c-4 { width: 32.2666666667%; }
+
+.gem-c-5 { width: 40.7333333333%; }
+
+.gem-c-6 { width: 49.2%; }
+
+.gem-c-7 { width: 57.6666666667%; }
+
+.gem-c-8 { width: 66.1333333333%; }
+
+.gem-c-9 { width: 74.6%; }
+
+.gem-c-10 { width: 83.0666666667%; }
+
+.gem-c-11 { width: 91.5333333333%; }
+
+.gem-c-12 { width: 100%; margin-left: 0; }
+
+@media only screen and (max-width: 550px) {
+    .gem-c-1, 
+    .gem-c-2, 
+    .gem-c-3, 
+    .gem-c-4, 
+    .gem-c-5, 
+    .gem-c-6, 
+    .gem-c-7, 
+    .gem-c-8, 
+    .gem-c-9, 
+    .gem-c-10, 
+    .gem-c-11, 
+    .gem-c-12 {
+        float: none;
+        width: auto;
+    }
+  
+    [class^="gem-c-"] + [class^="gem-c-"] {
+        margin-left: 0;
+    }
+}
