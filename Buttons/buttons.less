@@ -1,0 +1,141 @@
+/* Button Colors */
+
+@default-color: #cacbcd;
+@default-active-color: #b5b6b8;
+@primary-color: #2185d0;
+@primary-active-color: #1a69a4;
+@success-color: #21ba45;
+@success-active-color: #198f35;
+@warning-color: #f2711c;
+@warning-active-color: #cf590c;
+@error-color: #db2828;
+@error-active-color: #b21e1e;
+@link-text-color: #0078d7;
+@link-active-color: #f4f4f4;
+
+/* Common Colors */
+
+@white: #ffffff;
+@off-black: #282929;
+
+/* Base Button Styles */
+
+.gem-btn {
+	-webkit-font-smoothing: antialiased;
+	background-color: @default-color;
+	border-radius: 0.28571429rem;
+	border: 2px solid @default-color;
+	color: @off-black;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	height: 32px;
+	min-width: 80px;
+	outline: transparent;
+	padding: 4px 20px 6px;
+	&:active {
+		background-color: @default-active-color;
+		border-color: @default-active-color;
+	}
+}
+
+/* Standard Button Styles */
+
+.gem-btn.primary {
+	background-color: @primary-color;
+	border-color: @primary-color;
+	color: @white;
+	&:active {
+		background-color: @primary-active-color;
+		border-color: @primary-active-color;
+	}
+}
+.gem-btn.success {
+	background-color: @success-color;
+	border-color: @success-color;
+	color: @white;
+	&:active {
+		background-color: @success-active-color;
+		border-color: @success-active-color;
+	}
+}
+.gem-btn.warning {
+	background-color: @warning-color;
+	border-color: @warning-color;
+	color: @white;
+	&:active {
+		background-color: @warning-active-color;
+		border-color: @warning-active-color;
+	}
+}
+.gem-btn.error {
+	background-color: @error-color;
+	border-color: @error-color;
+	color: @white;
+	&:active {
+		background-color: @error-active-color;
+		border-color: @error-active-color;
+	}
+}
+.gem-btn.link {
+	background-color: transparent;
+	border-color: transparent;
+	color: @link-text-color;
+	&:active {
+		background-color: @link-active-color;
+		border-color: @link-active-color;
+	}
+}
+
+/* Outline Button Styles */
+
+.gem-btn.outline {
+	background: transparent;
+	border-color: @off-black;
+	&:active {
+		background: @off-black;
+		color: @white;
+	}
+}
+.gem-btn.outline.primary {
+	background: transparent;
+	border-color: @primary-color;
+	color: @primary-color;
+	&:active {
+		background-color: @primary-color;
+		color: @white;
+	}
+}
+.gem-btn.outline.success {
+	background: transparent;
+	border-color: @success-color;
+	color: @success-color;
+	&:active {
+		background-color: @success-color;
+		color: @white;
+	}
+}
+.gem-btn.outline.warning {
+	background: transparent;
+	border-color: @warning-color;
+	color: @warning-color;
+	&:active {
+		background-color: @warning-color;
+		color: @white;
+	}
+}
+.gem-btn.outline.error {
+	background: transparent;
+	border-color: @error-color;
+	color: @error-color;
+	&:active {
+		background-color: @error-color;
+		color: @white;
+	}
+}
+
+/* Flat Button Styles */
+
+.gem-btn.flat {
+	border-radius: 0;
+}
